@@ -1,7 +1,7 @@
 /**
     use binary search
-    time complexity
-    space complexity
+    time complexity: O(logn)
+    space complexity: O(1)
  */
 
 function searchInsert(nums: number[], target: number): number {
