@@ -1,13 +1,18 @@
+/**
+    time complexity: 0(n)
+    space complexity: 0(1) 
+ */
+
 function removeElement(nums: number[], val: number): number {
     const n = nums.length
-    let count = 0
+    let k = 0
+
     for (let i = 0; i < n; i++) {
-        if (nums[i] === val) {
-            count ++
-            nums[i] = 0
+        if (nums[i] !== val) {
+            nums[k] = nums[i]
+            k++
         }
     }
-    nums.sort((a, b) => b - a)
 
-    return n - count
+    return k
 };
